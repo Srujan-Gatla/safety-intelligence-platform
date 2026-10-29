@@ -1,0 +1,740 @@
+{
+  "dataset_directory": "C:\\Users\\sruja\\.gemini\\antigravity\\scratch\\safety-intelligence-platform\\data\\starter",
+  "overall_status": "PASSED",
+  "integrity_checks": {
+    "passed": true,
+    "primary_key_checks": {
+      "passed": true,
+      "total_tables_checked": 12,
+      "issues": []
+    },
+    "foreign_key_checks": {
+      "passed": true,
+      "total_relations_checked": 19,
+      "issues": []
+    },
+    "enum_checks": {
+      "passed": true,
+      "total_enum_columns_checked": 6,
+      "issues": []
+    },
+    "timeline_checks": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  "arithmetic_checks": {
+    "passed": true,
+    "duration_checks": {
+      "passed": true,
+      "total_checked": 2050,
+      "discrepancy_count": 0,
+      "sample_discrepancies": []
+    },
+    "latency_checks": {
+      "passed": true,
+      "total_checked": 1728,
+      "discrepancy_count": 0,
+      "sample_discrepancies": []
+    },
+    "sla_checks": {
+      "passed": true,
+      "total_checked": 1728,
+      "mismatch_count": 0,
+      "sample_mismatches": []
+    },
+    "lifecycle_checks": {
+      "passed": true,
+      "total_transitions_checked": 96,
+      "issue_count": 0,
+      "sample_issues": []
+    }
+  },
+  "edge_case_audit": {
+    "total_detected": 95,
+    "breakdown": {
+      "ACK_BEFORE_ALARM": 15,
+      "INTERLOCK_STATE_IMPOSSIBLE": 10,
+      "INCIDENT_LACKS_TRIGGERING_CONTEXT": 10,
+      "ALARM_FLOOD_REPLAY_DUPLICATE": 50,
+      "ACTION_CLOSED_WITHOUT_VERIFICATION": 10
+    },
+    "evaluation_against_ground_truth": {
+      "ground_truth_total": 93,
+      "detected_total": 95,
+      "true_positives": 93,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "precision": 0.9789,
+      "recall": 1.0,
+      "f1_score": 0.9893
+    },
+    "detected_anomalies": [
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH001-000003-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-01T02:36:28+00:00) < alarm_timestamp (2026-10-01T02:38:49+00:00), latency=-141.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH005-000020-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-01T16:14:47+00:00) < alarm_timestamp (2026-10-01T16:16:33+00:00), latency=-106.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH001-000017-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-01T17:52:35+00:00) < alarm_timestamp (2026-10-01T17:55:30+00:00), latency=-175.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH011-000029-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-02T03:42:13+00:00) < alarm_timestamp (2026-10-02T03:43:43+00:00), latency=-90.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH006-000029-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-02T06:25:16+00:00) < alarm_timestamp (2026-10-02T06:27:21+00:00), latency=-125.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH010-000035-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-02T11:04:55+00:00) < alarm_timestamp (2026-10-02T11:06:46+00:00), latency=-111.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH002-000041-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-02T22:43:21+00:00) < alarm_timestamp (2026-10-02T22:44:42+00:00), latency=-81.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH002-000079-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-04T15:23:16+00:00) < alarm_timestamp (2026-10-04T15:24:25+00:00), latency=-69.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH011-000088-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-05T00:45:18+00:00) < alarm_timestamp (2026-10-05T00:46:51+00:00), latency=-93.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH007-000112-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-05T04:25:05+00:00) < alarm_timestamp (2026-10-05T04:26:42+00:00), latency=-97.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH003-000111-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-05T16:11:55+00:00) < alarm_timestamp (2026-10-05T16:12:43+00:00), latency=-48.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH007-000124-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-05T19:41:37+00:00) < alarm_timestamp (2026-10-05T19:44:09+00:00), latency=-152.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH002-000128-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-06T05:20:24+00:00) < alarm_timestamp (2026-10-06T05:22:34+00:00), latency=-130.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH010-000113-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-06T09:14:54+00:00) < alarm_timestamp (2026-10-06T09:15:44+00:00), latency=-50.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Acknowledgement",
+        "entity_id": "ACK-ALM-MCH011-000131-01",
+        "issue_type": "ACK_BEFORE_ALARM",
+        "evidence": "ack_timestamp (2026-10-07T07:17:58+00:00) < alarm_timestamp (2026-10-07T07:19:43+00:00), latency=-105.0s",
+        "recommended_action": "REJECT_ACK_TIME_SKEW"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH002-02",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-002 RUNNING while interlock ITL-MCH002-02 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH004-02",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-004 RUNNING while interlock ITL-MCH004-02 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH004-03",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-004 RUNNING while interlock ITL-MCH004-03 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH006-03",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-006 RUNNING while interlock ITL-MCH006-03 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH009-02",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-009 RUNNING while interlock ITL-MCH009-02 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH009-03",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-009 RUNNING while interlock ITL-MCH009-03 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH010-02",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-010 RUNNING while interlock ITL-MCH010-02 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH011-03",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-011 RUNNING while interlock ITL-MCH011-03 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH012-02",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-012 RUNNING while interlock ITL-MCH012-02 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Interlock",
+        "entity_id": "ITL-MCH012-03",
+        "issue_type": "INTERLOCK_STATE_IMPOSSIBLE",
+        "evidence": "Machine MCH-012 RUNNING while interlock ITL-MCH012-03 TRIPPED with bypass=0",
+        "recommended_action": "FLAG_SENSOR_FAILURE"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000003",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000003 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000005",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000005 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000013",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000013 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000011",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000011 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000001",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000001 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000007",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000007 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000008",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000008 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000009",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000009 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000014",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000014 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "Incident",
+        "entity_id": "INC-2026-000012",
+        "issue_type": "INCIDENT_LACKS_TRIGGERING_CONTEXT",
+        "evidence": "Incident INC-2026-000012 has no triggering alarm and 0 alarms in prior 60m",
+        "recommended_action": "AUDIT_UNLOGGED_TRIGGER"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0034",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-023",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0035",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-017",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0036",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-039",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0037",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0038",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-023",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0039",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-010",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0040",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-038",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0041",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-005",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0042",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-033",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0043",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-037",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0044",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-034",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0045",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-015",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0046",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-026",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0047",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0048",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0049",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-012",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0050",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-022",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0051",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-024",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0052",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-005",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0053",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-016",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0054",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-037",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0055",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-020",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0059",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-017",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0060",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-039",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0061",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0062",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-023",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0063",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-010",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0064",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-038",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0065",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-005",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0066",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-033",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0067",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-037",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0068",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-034",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0069",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-015",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH006-RPLY0070",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-006, definition DEF-026",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0071",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0072",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-004",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0073",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-012",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0074",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-022",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0075",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-024",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0076",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-005",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0077",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-016",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0078",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-037",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH008-RPLY0079",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-008, definition DEF-020",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0056",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-031",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0057",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-001",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0058",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-018",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0080",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-031",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0081",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-001",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0082",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-018",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "AlarmEvent",
+        "entity_id": "ALM-MCH002-RPLY0083",
+        "issue_type": "ALARM_FLOOD_REPLAY_DUPLICATE",
+        "evidence": "Replayed telemetry burst on machine MCH-002, definition DEF-033",
+        "recommended_action": "DEDUPLICATE_REPLAY_TELEMETRY"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000001-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000001-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000002-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000002-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000003-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000003-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000004-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000004-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000005-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000005-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000007-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000007-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000009-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000009-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000010-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000010-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000011-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000011-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      },
+      {
+        "entity_type": "CorrectiveAction",
+        "entity_id": "ACT-INC-2026-000013-01",
+        "issue_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+        "evidence": "Action ACT-INC-2026-000013-01 status CLOSED with null QA verification signoff",
+        "recommended_action": "REOPEN_UNVERIFIED_ACTION"
+      }
+    ]
+  }
+}

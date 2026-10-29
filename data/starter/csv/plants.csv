@@ -1,0 +1,5 @@
+plant_id,name,code,location,timezone,operational_status,total_lines,created_at
+PLT-01,Austin Advanced Gigafactory,ATX,"Austin, USA",America/Chicago,ACTIVE,12,2026-01-01T00:00:00Z
+PLT-02,Detroit Precision Powertrain,DET,"Detroit, USA",America/Detroit,ACTIVE,10,2026-01-01T00:00:00Z
+PLT-03,Stuttgart High-Tech Assembly,STU,"Stuttgart, Germany",Europe/Berlin,ACTIVE,14,2026-01-01T00:00:00Z
+PLT-04,Yokohama Precision Robotics,YOK,"Yokohama, Japan",Asia/Tokyo,ACTIVE,8,2026-01-01T00:00:00Z

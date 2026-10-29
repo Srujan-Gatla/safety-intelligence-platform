@@ -1,0 +1,42 @@
+[
+  {
+    "plant_id": "PLT-01",
+    "name": "Austin Advanced Gigafactory",
+    "code": "ATX",
+    "location": "Austin, USA",
+    "timezone": "America/Chicago",
+    "operational_status": "ACTIVE",
+    "total_lines": 12,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "plant_id": "PLT-02",
+    "name": "Detroit Precision Powertrain",
+    "code": "DET",
+    "location": "Detroit, USA",
+    "timezone": "America/Detroit",
+    "operational_status": "ACTIVE",
+    "total_lines": 10,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "plant_id": "PLT-03",
+    "name": "Stuttgart High-Tech Assembly",
+    "code": "STU",
+    "location": "Stuttgart, Germany",
+    "timezone": "Europe/Berlin",
+    "operational_status": "ACTIVE",
+    "total_lines": 14,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "plant_id": "PLT-04",
+    "name": "Yokohama Precision Robotics",
+    "code": "YOK",
+    "location": "Yokohama, Japan",
+    "timezone": "Asia/Tokyo",
+    "operational_status": "ACTIVE",
+    "total_lines": 8,
+    "created_at": "2026-01-01T00:00:00Z"
+  }
+]

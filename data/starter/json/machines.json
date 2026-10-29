@@ -1,0 +1,122 @@
+[
+  {
+    "machine_id": "MCH-001",
+    "plant_id": "PLT-01",
+    "name": "Cnc Mill Unit 001",
+    "type": "CNC_MILL",
+    "criticality": "CRITICAL",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v2.1.1"
+  },
+  {
+    "machine_id": "MCH-002",
+    "plant_id": "PLT-02",
+    "name": "Robotic Arm Unit 002",
+    "type": "ROBOTIC_ARM",
+    "criticality": "HIGH",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v3.2.2"
+  },
+  {
+    "machine_id": "MCH-003",
+    "plant_id": "PLT-03",
+    "name": "Hydraulic Press Unit 003",
+    "type": "HYDRAULIC_PRESS",
+    "criticality": "MEDIUM",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v4.3.3"
+  },
+  {
+    "machine_id": "MCH-004",
+    "plant_id": "PLT-04",
+    "name": "Conveyor Unit 004",
+    "type": "CONVEYOR",
+    "criticality": "LOW",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v1.4.4"
+  },
+  {
+    "machine_id": "MCH-005",
+    "plant_id": "PLT-01",
+    "name": "Stamping Unit Unit 005",
+    "type": "STAMPING_UNIT",
+    "criticality": "CRITICAL",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v2.5.0"
+  },
+  {
+    "machine_id": "MCH-006",
+    "plant_id": "PLT-02",
+    "name": "Injection Molder Unit 006",
+    "type": "INJECTION_MOLDER",
+    "criticality": "HIGH",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v3.6.1"
+  },
+  {
+    "machine_id": "MCH-007",
+    "plant_id": "PLT-03",
+    "name": "Cnc Mill Unit 007",
+    "type": "CNC_MILL",
+    "criticality": "MEDIUM",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v4.7.2"
+  },
+  {
+    "machine_id": "MCH-008",
+    "plant_id": "PLT-04",
+    "name": "Robotic Arm Unit 008",
+    "type": "ROBOTIC_ARM",
+    "criticality": "LOW",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v1.8.3"
+  },
+  {
+    "machine_id": "MCH-009",
+    "plant_id": "PLT-01",
+    "name": "Hydraulic Press Unit 009",
+    "type": "HYDRAULIC_PRESS",
+    "criticality": "CRITICAL",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v2.0.4"
+  },
+  {
+    "machine_id": "MCH-010",
+    "plant_id": "PLT-02",
+    "name": "Conveyor Unit 010",
+    "type": "CONVEYOR",
+    "criticality": "HIGH",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v3.1.0"
+  },
+  {
+    "machine_id": "MCH-011",
+    "plant_id": "PLT-03",
+    "name": "Stamping Unit Unit 011",
+    "type": "STAMPING_UNIT",
+    "criticality": "MEDIUM",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v4.2.1"
+  },
+  {
+    "machine_id": "MCH-012",
+    "plant_id": "PLT-04",
+    "name": "Injection Molder Unit 012",
+    "type": "INJECTION_MOLDER",
+    "criticality": "LOW",
+    "installation_date": "2024-06-15",
+    "status": "RUNNING",
+    "firmware_version": "v1.3.2"
+  }
+]

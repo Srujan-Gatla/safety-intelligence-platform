@@ -1,0 +1,962 @@
+[
+  {
+    "state_event_id": "MST-MCH007-000049",
+    "machine_id": "MCH-007",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:00:01+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH007-000001",
+    "interlock_trip_id": "ITL-MCH007-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000081",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:03:11+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH011-000001",
+    "interlock_trip_id": "ITL-MCH011-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000082",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T00:03:14.610000+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH011-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH012-000091",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:03:27+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH012-000001",
+    "interlock_trip_id": "ITL-MCH012-01"
+  },
+  {
+    "state_event_id": "MST-MCH005-000035",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:04:08+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH005-000001",
+    "interlock_trip_id": "ITL-MCH005-01"
+  },
+  {
+    "state_event_id": "MST-MCH009-000061",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:24:18+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH009-000001",
+    "interlock_trip_id": "ITL-MCH009-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000083",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:27:12+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH011-000002",
+    "interlock_trip_id": "ITL-MCH011-01"
+  },
+  {
+    "state_event_id": "MST-MCH012-000092",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T00:27:14+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH012-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH008-000053",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:29:49+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH008-000001",
+    "interlock_trip_id": "ITL-MCH008-01"
+  },
+  {
+    "state_event_id": "MST-MCH005-000036",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T00:36:22+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH005-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH007-000050",
+    "machine_id": "MCH-007",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T00:41:59+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH007-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH009-000062",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T00:43:40+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH009-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH009-000063",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T00:46:32+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH009-000002",
+    "interlock_trip_id": "ITL-MCH009-01"
+  },
+  {
+    "state_event_id": "MST-MCH008-000054",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T01:01:32+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH008-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH010-000069",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:03:23+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000001",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH009-000064",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T01:05:55+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH009-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH011-000084",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T01:21:29+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH011-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH006-000041",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:26:43+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH006-000001",
+    "interlock_trip_id": "ITL-MCH006-01"
+  },
+  {
+    "state_event_id": "MST-MCH006-000042",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T01:32:26+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH006-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH009-000065",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:40:21+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH009-000003",
+    "interlock_trip_id": "ITL-MCH009-01"
+  },
+  {
+    "state_event_id": "MST-MCH008-000055",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:40:51+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH008-000003",
+    "interlock_trip_id": "ITL-MCH008-01"
+  },
+  {
+    "state_event_id": "MST-MCH008-000056",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T01:52:19+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH008-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH001-000001",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:57:07+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH001-000002",
+    "interlock_trip_id": "ITL-MCH001-01"
+  },
+  {
+    "state_event_id": "MST-MCH002-000011",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T01:57:14+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH002-000001",
+    "interlock_trip_id": "ITL-MCH002-01"
+  },
+  {
+    "state_event_id": "MST-MCH001-000002",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T02:12:08+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH001-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH003-000021",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T02:14:19+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH003-000002",
+    "interlock_trip_id": "ITL-MCH003-01"
+  },
+  {
+    "state_event_id": "MST-MCH003-000022",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T02:14:20.430000+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH003-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH002-000012",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T02:16:45+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH002-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH003-000023",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T02:17:43+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH003-000003",
+    "interlock_trip_id": "ITL-MCH003-01"
+  },
+  {
+    "state_event_id": "MST-MCH001-000003",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T02:38:49+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH001-000003",
+    "interlock_trip_id": "ITL-MCH001-01"
+  },
+  {
+    "state_event_id": "MST-MCH009-000066",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T02:39:47+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH009-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH003-000024",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T02:43:14+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH003-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH010-000070",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T03:00:14+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000001",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH007-000051",
+    "machine_id": "MCH-007",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:03:18+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH007-000002",
+    "interlock_trip_id": "ITL-MCH007-01"
+  },
+  {
+    "state_event_id": "MST-MCH003-000025",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:17:54+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH003-000006",
+    "interlock_trip_id": "ITL-MCH003-01"
+  },
+  {
+    "state_event_id": "MST-MCH002-000013",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:28:44+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH002-000003",
+    "interlock_trip_id": "ITL-MCH002-01"
+  },
+  {
+    "state_event_id": "MST-MCH002-000014",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T03:34:08+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH002-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH003-000026",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T03:38:36+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH003-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH009-000067",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:39:13+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH009-000005",
+    "interlock_trip_id": "ITL-MCH009-01"
+  },
+  {
+    "state_event_id": "MST-MCH008-000057",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:44:26+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH008-000006",
+    "interlock_trip_id": "ITL-MCH008-01"
+  },
+  {
+    "state_event_id": "MST-MCH003-000027",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T03:46:31+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH003-000007",
+    "interlock_trip_id": "ITL-MCH003-01"
+  },
+  {
+    "state_event_id": "MST-MCH001-000004",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T03:54:10+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH001-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH003-000028",
+    "machine_id": "MCH-003",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T04:04:43+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH003-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH007-000052",
+    "machine_id": "MCH-007",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T04:08:20+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH007-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH009-000068",
+    "machine_id": "MCH-009",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T04:18:52+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH009-000005",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH008-000058",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T04:25:37+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH008-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH005-000037",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T04:29:05+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH005-000004",
+    "interlock_trip_id": "ITL-MCH005-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000085",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T04:39:31+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH011-000004",
+    "interlock_trip_id": "ITL-MCH011-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000071",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T04:39:55+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000002",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH002-000015",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T04:53:24+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH002-000005",
+    "interlock_trip_id": "ITL-MCH002-01"
+  },
+  {
+    "state_event_id": "MST-MCH004-000029",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T04:57:06+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH004-000003",
+    "interlock_trip_id": "ITL-MCH004-01"
+  },
+  {
+    "state_event_id": "MST-MCH005-000038",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T04:59:25+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH005-000004",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH002-000016",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T05:11:26+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH002-000005",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH002-000017",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:21:08+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH002-000007",
+    "interlock_trip_id": "ITL-MCH002-01"
+  },
+  {
+    "state_event_id": "MST-MCH005-000039",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:28:13+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH005-000007",
+    "interlock_trip_id": "ITL-MCH005-01"
+  },
+  {
+    "state_event_id": "MST-MCH012-000093",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:31:26+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH012-000002",
+    "interlock_trip_id": "ITL-MCH012-01"
+  },
+  {
+    "state_event_id": "MST-MCH006-000043",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:31:56+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH006-000002",
+    "interlock_trip_id": "ITL-MCH006-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000086",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T05:35:43+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH011-000004",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH011-000087",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:41:49+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH011-000006",
+    "interlock_trip_id": "ITL-MCH011-01"
+  },
+  {
+    "state_event_id": "MST-MCH004-000030",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T05:47:47+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH004-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH004-000031",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T05:53:01+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH004-000004",
+    "interlock_trip_id": "ITL-MCH004-01"
+  },
+  {
+    "state_event_id": "MST-MCH008-000059",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T06:07:14+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH008-000007",
+    "interlock_trip_id": "ITL-MCH008-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000072",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:08:26+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH012-000094",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:12:41+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH012-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH002-000018",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:14:09+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH002-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH005-000040",
+    "machine_id": "MCH-005",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:17:02+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH005-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH008-000060",
+    "machine_id": "MCH-008",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:17:09+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH008-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH002-000019",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T06:22:01+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH002-000008",
+    "interlock_trip_id": "ITL-MCH002-01"
+  },
+  {
+    "state_event_id": "MST-MCH011-000088",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:25:07+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH011-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH006-000044",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:29:35+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH006-000002",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH011-000089",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T06:48:55+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH011-000007",
+    "interlock_trip_id": "ITL-MCH011-01"
+  },
+  {
+    "state_event_id": "MST-MCH002-000020",
+    "machine_id": "MCH-002",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T06:52:49+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH002-000008",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH010-000073",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T06:55:20+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000006",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000074",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T07:30:35+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH006-000045",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T07:35:33+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH006-000003",
+    "interlock_trip_id": "ITL-MCH006-01"
+  },
+  {
+    "state_event_id": "MST-MCH004-000032",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T07:37:26+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH004-000004",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH011-000090",
+    "machine_id": "MCH-011",
+    "shift_id": "SHF-PLT03-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T07:43:45+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH011-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH004-000033",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T07:52:21+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH004-000007",
+    "interlock_trip_id": "ITL-MCH004-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000075",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T08:01:39+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000007",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH006-000046",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T08:33:25+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH006-000003",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH010-000076",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T08:54:06+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH004-000034",
+    "machine_id": "MCH-004",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T09:01:42+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH004-000007",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH012-000095",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T09:24:00+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH012-000006",
+    "interlock_trip_id": "ITL-MCH012-01"
+  },
+  {
+    "state_event_id": "MST-MCH006-000047",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T09:24:24+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH006-000006",
+    "interlock_trip_id": "ITL-MCH006-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000077",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T09:31:00+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000008",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000078",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T09:49:42+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000008",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH001-000005",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T09:50:02+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH001-000008",
+    "interlock_trip_id": "ITL-MCH001-01"
+  },
+  {
+    "state_event_id": "MST-MCH006-000048",
+    "machine_id": "MCH-006",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T10:22:58+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH006-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH001-000006",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T10:49:11+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH001-000008",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH010-000079",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T10:52:58+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH010-000009",
+    "interlock_trip_id": "ITL-MCH010-01"
+  },
+  {
+    "state_event_id": "MST-MCH010-000080",
+    "machine_id": "MCH-010",
+    "shift_id": "SHF-PLT02-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T11:15:03+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH010-000009",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH001-000007",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T11:17:07+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH001-000011",
+    "interlock_trip_id": "ITL-MCH001-01"
+  },
+  {
+    "state_event_id": "MST-MCH001-000008",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T11:17:08.730000+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH001-000011",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH012-000096",
+    "machine_id": "MCH-012",
+    "shift_id": "SHF-PLT04-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T11:17:58+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH012-000006",
+    "interlock_trip_id": null
+  },
+  {
+    "state_event_id": "MST-MCH001-000009",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "RUNNING",
+    "new_state": "TRIPPED",
+    "timestamp": "2026-10-01T13:38:46+00:00",
+    "transition_reason": "Emergency trip triggered by alarm ALM-MCH001-000013",
+    "interlock_trip_id": "ITL-MCH001-01"
+  },
+  {
+    "state_event_id": "MST-MCH001-000010",
+    "machine_id": "MCH-001",
+    "shift_id": "SHF-PLT01-20261001-01",
+    "previous_state": "TRIPPED",
+    "new_state": "RUNNING",
+    "timestamp": "2026-10-01T14:21:03+00:00",
+    "transition_reason": "Safety reset and clearance for alarm ALM-MCH001-000013",
+    "interlock_trip_id": null
+  }
+]

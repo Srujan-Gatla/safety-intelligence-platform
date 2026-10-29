@@ -1,0 +1,162 @@
+[
+  {
+    "zone_id": "SAFE-PLT01-001",
+    "plant_id": "PLT-01",
+    "name": "ATX Zone 01 (Thermal Radiation)",
+    "hazard_classification": "THERMAL_RADIATION",
+    "required_sil_level": "SIL_3",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 1,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT01-002",
+    "plant_id": "PLT-01",
+    "name": "ATX Zone 02 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_2",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 1,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT01-003",
+    "plant_id": "PLT-01",
+    "name": "ATX Zone 03 (Robotic Collision)",
+    "hazard_classification": "ROBOTIC_COLLISION",
+    "required_sil_level": "SIL_2",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 0,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT01-004",
+    "plant_id": "PLT-01",
+    "name": "ATX Zone 04 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_2",
+    "access_state": "CONTROLLED",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT02-001",
+    "plant_id": "PLT-02",
+    "name": "DET Zone 01 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_2",
+    "access_state": "OPEN",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT02-002",
+    "plant_id": "PLT-02",
+    "name": "DET Zone 02 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_4",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT02-003",
+    "plant_id": "PLT-02",
+    "name": "DET Zone 03 (Thermal Radiation)",
+    "hazard_classification": "THERMAL_RADIATION",
+    "required_sil_level": "SIL_2",
+    "access_state": "OPEN",
+    "max_occupancy": 6,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT02-004",
+    "plant_id": "PLT-02",
+    "name": "DET Zone 04 (Chemical Exposure)",
+    "hazard_classification": "CHEMICAL_EXPOSURE",
+    "required_sil_level": "SIL_1",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 3,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT03-001",
+    "plant_id": "PLT-03",
+    "name": "STU Zone 01 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_4",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT03-002",
+    "plant_id": "PLT-03",
+    "name": "STU Zone 02 (Robotic Collision)",
+    "hazard_classification": "ROBOTIC_COLLISION",
+    "required_sil_level": "SIL_2",
+    "access_state": "OPEN",
+    "max_occupancy": 0,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT03-003",
+    "plant_id": "PLT-03",
+    "name": "STU Zone 03 (Robotic Collision)",
+    "hazard_classification": "ROBOTIC_COLLISION",
+    "required_sil_level": "SIL_3",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 0,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT03-004",
+    "plant_id": "PLT-03",
+    "name": "STU Zone 04 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_4",
+    "access_state": "OPEN",
+    "max_occupancy": 7,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT04-001",
+    "plant_id": "PLT-04",
+    "name": "YOK Zone 01 (Mechanical Pinch)",
+    "hazard_classification": "MECHANICAL_PINCH",
+    "required_sil_level": "SIL_4",
+    "access_state": "CONTROLLED",
+    "max_occupancy": 1,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT04-002",
+    "plant_id": "PLT-04",
+    "name": "YOK Zone 02 (High Voltage)",
+    "hazard_classification": "HIGH_VOLTAGE",
+    "required_sil_level": "SIL_4",
+    "access_state": "OPEN",
+    "max_occupancy": 4,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT04-003",
+    "plant_id": "PLT-04",
+    "name": "YOK Zone 03 (Mechanical Pinch)",
+    "hazard_classification": "MECHANICAL_PINCH",
+    "required_sil_level": "SIL_1",
+    "access_state": "CONTROLLED",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "zone_id": "SAFE-PLT04-004",
+    "plant_id": "PLT-04",
+    "name": "YOK Zone 04 (Thermal Radiation)",
+    "hazard_classification": "THERMAL_RADIATION",
+    "required_sil_level": "SIL_2",
+    "access_state": "RESTRICTED",
+    "max_occupancy": 2,
+    "created_at": "2026-01-15T00:00:00Z"
+  }
+]

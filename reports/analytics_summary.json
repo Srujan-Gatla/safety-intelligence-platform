@@ -1,0 +1,1285 @@
+{
+  "metrics": {
+    "dataset_directory": "data\\full",
+    "safety_kpis": {
+      "incident_recurrence_rate_percent": 15.0,
+      "mean_time_between_recurrent_conditions_days": 8.4,
+      "isa18_nuisance_alarm_percent": 5.25,
+      "operator_acknowledgement_sla_compliance_percent": 85.18,
+      "unverified_closed_action_rate_percent": 85.71
+    },
+    "recurrent_hazard_evaluation": {
+      "ground_truth_recurrent_patterns": 5,
+      "detected_recurrent_patterns": 5,
+      "true_positives": 4,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1_score": 0.8
+    },
+    "repeated_conditions_summary": {
+      "recurrent_incidents_detected": 6,
+      "chronic_interlock_trips_detected": 59,
+      "hazard_hotspots": 4
+    },
+    "isa18_summary": {
+      "total_alarms": 50250,
+      "nuisance_alarm_ratio": 0.0525,
+      "flood_alarms": 318
+    },
+    "sla_summary": {
+      "total_alarms": 50250,
+      "total_acknowledged": 43115,
+      "acknowledgement_rate_percent": 85.8,
+      "average_latency_seconds": 724.86,
+      "total_sla_breaches": 6388,
+      "sla_compliance_rate_percent": 85.18
+    },
+    "corrective_actions_summary": {
+      "verification_compliance_percent": 14.29,
+      "unverified_closed_actions": 30
+    }
+  },
+  "repeated_conditions": {
+    "total_repeated_conditions_found": 65,
+    "recurrent_incidents": [
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-002",
+        "machine_name": "Robotic Arm Unit 002",
+        "zone_id": "SAFE-PLT02-001",
+        "zone_name": "DET Zone 01 (Thermal Radiation)",
+        "hazard_type": "EMERGENCY_STOP_FAILURE",
+        "first_incident_id": "INC-2026-000033",
+        "first_incident_timestamp": "2026-10-03T12:00:00+00:00",
+        "recurrent_incident_id": "INC-2026-000034",
+        "recurrent_incident_timestamp": "2026-10-17T12:00:00+00:00",
+        "days_to_recurrence": 14.0,
+        "intervening_action_id": "ACT-INC-2026-000033-01",
+        "action_effectiveness": 0.35,
+        "root_cause_diagnosis": "Ineffective corrective action closed without mitigating root drift",
+        "severity_escalation": "ESCALATED"
+      },
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-002",
+        "machine_name": "Robotic Arm Unit 002",
+        "zone_id": "SAFE-PLT02-001",
+        "zone_name": "DET Zone 01 (Thermal Radiation)",
+        "hazard_type": "EMERGENCY_STOP_FAILURE",
+        "first_incident_id": "INC-2026-000034",
+        "first_incident_timestamp": "2026-10-17T12:00:00+00:00",
+        "recurrent_incident_id": "INC-2026-000030",
+        "recurrent_incident_timestamp": "2026-10-21T04:17:49+00:00",
+        "days_to_recurrence": 3.7,
+        "intervening_action_id": null,
+        "action_effectiveness": null,
+        "root_cause_diagnosis": "Repeat mechanical or procedural failure under similar operational conditions",
+        "severity_escalation": "MAINTAINED"
+      },
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-003",
+        "machine_name": "Hydraulic Press Unit 003",
+        "zone_id": "SAFE-PLT03-001",
+        "zone_name": "STU Zone 01 (Mechanical Pinch)",
+        "hazard_type": "UNCONTROLLED_MOTION",
+        "first_incident_id": "INC-2026-000035",
+        "first_incident_timestamp": "2026-10-03T13:00:00+00:00",
+        "recurrent_incident_id": "INC-2026-000036",
+        "recurrent_incident_timestamp": "2026-10-15T13:00:00+00:00",
+        "days_to_recurrence": 12.0,
+        "intervening_action_id": "ACT-INC-2026-000035-01",
+        "action_effectiveness": 0.35,
+        "root_cause_diagnosis": "Ineffective corrective action closed without mitigating root drift",
+        "severity_escalation": "ESCALATED"
+      },
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-004",
+        "machine_name": "Conveyor Unit 004",
+        "zone_id": "SAFE-PLT04-001",
+        "zone_name": "YOK Zone 01 (Thermal Radiation)",
+        "hazard_type": "EMERGENCY_STOP_FAILURE",
+        "first_incident_id": "INC-2026-000037",
+        "first_incident_timestamp": "2026-10-03T16:00:00+00:00",
+        "recurrent_incident_id": "INC-2026-000038",
+        "recurrent_incident_timestamp": "2026-10-10T16:00:00+00:00",
+        "days_to_recurrence": 7.0,
+        "intervening_action_id": "ACT-INC-2026-000037-01",
+        "action_effectiveness": 0.35,
+        "root_cause_diagnosis": "Ineffective corrective action closed without mitigating root drift",
+        "severity_escalation": "ESCALATED"
+      },
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-005",
+        "machine_name": "Stamping Unit Unit 005",
+        "zone_id": "SAFE-PLT01-001",
+        "zone_name": "ATX Zone 01 (Thermal Radiation)",
+        "hazard_type": "INTERLOCK_BYPASS_VIOLATION",
+        "first_incident_id": "INC-2026-000039",
+        "first_incident_timestamp": "2026-10-03T14:00:00+00:00",
+        "recurrent_incident_id": "INC-2026-000040",
+        "recurrent_incident_timestamp": "2026-10-14T14:00:00+00:00",
+        "days_to_recurrence": 11.0,
+        "intervening_action_id": "ACT-INC-2026-000039-01",
+        "action_effectiveness": 0.35,
+        "root_cause_diagnosis": "Ineffective corrective action closed without mitigating root drift",
+        "severity_escalation": "ESCALATED"
+      },
+      {
+        "pattern_type": "RECURRENT_INCIDENT",
+        "machine_id": "MCH-010",
+        "machine_name": "Conveyor Unit 010",
+        "zone_id": "SAFE-PLT02-001",
+        "zone_name": "DET Zone 01 (Thermal Radiation)",
+        "hazard_type": "THERMAL_RUNAWAY_BREACH",
+        "first_incident_id": "INC-2026-000014",
+        "first_incident_timestamp": "2026-10-09T02:47:57+00:00",
+        "recurrent_incident_id": "INC-2026-000004",
+        "recurrent_incident_timestamp": "2026-10-11T16:04:06+00:00",
+        "days_to_recurrence": 2.6,
+        "intervening_action_id": "ACT-INC-2026-000014-01",
+        "action_effectiveness": 0.92,
+        "root_cause_diagnosis": "Corrective action closed without independent QA verification",
+        "severity_escalation": "MAINTAINED"
+      }
+    ],
+    "chronic_interlock_trips": [
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-009",
+        "machine_name": "Hydraulic Press Unit 009",
+        "interlock_id": "ITL-MCH009-01",
+        "interlock_name": "Hydraulic Press Unit 009 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T01:52:20+00:00",
+        "last_trip": "2026-10-01T08:49:22+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH009-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-014",
+        "machine_name": "Robotic Arm Unit 014",
+        "interlock_id": "ITL-MCH014-01",
+        "interlock_name": "Robotic Arm Unit 014 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:30:37+00:00",
+        "last_trip": "2026-10-01T06:39:17+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH014-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-024",
+        "machine_name": "Injection Molder Unit 024",
+        "interlock_id": "ITL-MCH024-01",
+        "interlock_name": "Injection Molder Unit 024 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:35:49+00:00",
+        "last_trip": "2026-10-01T06:49:05+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH024-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-027",
+        "machine_name": "Hydraulic Press Unit 027",
+        "interlock_id": "ITL-MCH027-01",
+        "interlock_name": "Hydraulic Press Unit 027 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:45:52+00:00",
+        "last_trip": "2026-10-01T12:55:49+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH027-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-029",
+        "machine_name": "Stamping Unit Unit 029",
+        "interlock_id": "ITL-MCH029-01",
+        "interlock_name": "Stamping Unit Unit 029 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T01:38:38+00:00",
+        "last_trip": "2026-10-01T20:27:54+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH029-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-034",
+        "machine_name": "Conveyor Unit 034",
+        "interlock_id": "ITL-MCH034-01",
+        "interlock_name": "Conveyor Unit 034 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T01:12:59+00:00",
+        "last_trip": "2026-10-01T08:54:40+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH034-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-039",
+        "machine_name": "Hydraulic Press Unit 039",
+        "interlock_id": "ITL-MCH039-01",
+        "interlock_name": "Hydraulic Press Unit 039 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:06:57+00:00",
+        "last_trip": "2026-10-01T07:35:42+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH039-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-042",
+        "machine_name": "Injection Molder Unit 042",
+        "interlock_id": "ITL-MCH042-01",
+        "interlock_name": "Injection Molder Unit 042 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:44:52+00:00",
+        "last_trip": "2026-10-01T08:56:01+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH042-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-046",
+        "machine_name": "Conveyor Unit 046",
+        "interlock_id": "ITL-MCH046-01",
+        "interlock_name": "Conveyor Unit 046 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:50:39+00:00",
+        "last_trip": "2026-10-01T12:44:13+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH046-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-050",
+        "machine_name": "Robotic Arm Unit 050",
+        "interlock_id": "ITL-MCH050-01",
+        "interlock_name": "Robotic Arm Unit 050 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T00:21:07+00:00",
+        "last_trip": "2026-10-01T06:50:14+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH050-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-051",
+        "machine_name": "Hydraulic Press Unit 051",
+        "interlock_id": "ITL-MCH051-01",
+        "interlock_name": "Hydraulic Press Unit 051 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T02:41:32+00:00",
+        "last_trip": "2026-10-01T17:58:52+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH051-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-055",
+        "machine_name": "Cnc Mill Unit 055",
+        "interlock_id": "ITL-MCH055-01",
+        "interlock_name": "Cnc Mill Unit 055 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 6,
+        "first_trip": "2026-10-01T03:03:48+00:00",
+        "last_trip": "2026-10-01T14:07:03+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH055-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-006",
+        "machine_name": "Injection Molder Unit 006",
+        "interlock_id": "ITL-MCH006-01",
+        "interlock_name": "Injection Molder Unit 006 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:29:44+00:00",
+        "last_trip": "2026-10-01T06:15:53+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH006-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-007",
+        "machine_name": "Cnc Mill Unit 007",
+        "interlock_id": "ITL-MCH007-01",
+        "interlock_name": "Cnc Mill Unit 007 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:40:17+00:00",
+        "last_trip": "2026-10-01T09:54:58+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH007-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-010",
+        "machine_name": "Conveyor Unit 010",
+        "interlock_id": "ITL-MCH010-01",
+        "interlock_name": "Conveyor Unit 010 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:50:19+00:00",
+        "last_trip": "2026-10-01T05:15:27+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH010-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-015",
+        "machine_name": "Hydraulic Press Unit 015",
+        "interlock_id": "ITL-MCH015-01",
+        "interlock_name": "Hydraulic Press Unit 015 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:40:06+00:00",
+        "last_trip": "2026-10-01T05:55:37+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH015-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-028",
+        "machine_name": "Conveyor Unit 028",
+        "interlock_id": "ITL-MCH028-01",
+        "interlock_name": "Conveyor Unit 028 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:10:32+00:00",
+        "last_trip": "2026-10-01T12:22:32+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH028-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-030",
+        "machine_name": "Injection Molder Unit 030",
+        "interlock_id": "ITL-MCH030-01",
+        "interlock_name": "Injection Molder Unit 030 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:18:31+00:00",
+        "last_trip": "2026-10-01T06:45:13+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH030-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-032",
+        "machine_name": "Robotic Arm Unit 032",
+        "interlock_id": "ITL-MCH032-01",
+        "interlock_name": "Robotic Arm Unit 032 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:20:21+00:00",
+        "last_trip": "2026-10-01T08:19:28+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH032-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-033",
+        "machine_name": "Hydraulic Press Unit 033",
+        "interlock_id": "ITL-MCH033-01",
+        "interlock_name": "Hydraulic Press Unit 033 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:09:21+00:00",
+        "last_trip": "2026-10-01T08:27:40+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH033-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-038",
+        "machine_name": "Robotic Arm Unit 038",
+        "interlock_id": "ITL-MCH038-01",
+        "interlock_name": "Robotic Arm Unit 038 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:08:31+00:00",
+        "last_trip": "2026-10-01T07:47:27+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH038-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-041",
+        "machine_name": "Stamping Unit Unit 041",
+        "interlock_id": "ITL-MCH041-01",
+        "interlock_name": "Stamping Unit Unit 041 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:05:34+00:00",
+        "last_trip": "2026-10-01T05:54:57+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH041-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-044",
+        "machine_name": "Robotic Arm Unit 044",
+        "interlock_id": "ITL-MCH044-01",
+        "interlock_name": "Robotic Arm Unit 044 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:09:09+00:00",
+        "last_trip": "2026-10-01T04:12:26+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH044-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-045",
+        "machine_name": "Hydraulic Press Unit 045",
+        "interlock_id": "ITL-MCH045-01",
+        "interlock_name": "Hydraulic Press Unit 045 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:45:41+00:00",
+        "last_trip": "2026-10-01T10:57:21+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH045-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-048",
+        "machine_name": "Injection Molder Unit 048",
+        "interlock_id": "ITL-MCH048-01",
+        "interlock_name": "Injection Molder Unit 048 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:40:54+00:00",
+        "last_trip": "2026-10-01T08:13:38+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH048-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-052",
+        "machine_name": "Conveyor Unit 052",
+        "interlock_id": "ITL-MCH052-01",
+        "interlock_name": "Conveyor Unit 052 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T02:20:22+00:00",
+        "last_trip": "2026-10-01T04:08:11+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH052-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-057",
+        "machine_name": "Hydraulic Press Unit 057",
+        "interlock_id": "ITL-MCH057-01",
+        "interlock_name": "Hydraulic Press Unit 057 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T02:41:17+00:00",
+        "last_trip": "2026-10-01T08:44:44+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH057-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-058",
+        "machine_name": "Conveyor Unit 058",
+        "interlock_id": "ITL-MCH058-01",
+        "interlock_name": "Conveyor Unit 058 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T00:10:30+00:00",
+        "last_trip": "2026-10-01T06:56:45+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH058-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-059",
+        "machine_name": "Stamping Unit Unit 059",
+        "interlock_id": "ITL-MCH059-01",
+        "interlock_name": "Stamping Unit Unit 059 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 5,
+        "first_trip": "2026-10-01T01:05:51+00:00",
+        "last_trip": "2026-10-01T07:56:20+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH059-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-002",
+        "machine_name": "Robotic Arm Unit 002",
+        "interlock_id": "ITL-MCH002-01",
+        "interlock_name": "Robotic Arm Unit 002 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:53:56+00:00",
+        "last_trip": "2026-10-01T03:51:21+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH002-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-003",
+        "machine_name": "Hydraulic Press Unit 003",
+        "interlock_id": "ITL-MCH003-01",
+        "interlock_name": "Hydraulic Press Unit 003 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T05:13:32+00:00",
+        "last_trip": "2026-10-01T12:56:25+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH003-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-004",
+        "machine_name": "Conveyor Unit 004",
+        "interlock_id": "ITL-MCH004-01",
+        "interlock_name": "Conveyor Unit 004 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:56:14+00:00",
+        "last_trip": "2026-10-01T09:03:52+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH004-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-008",
+        "machine_name": "Robotic Arm Unit 008",
+        "interlock_id": "ITL-MCH008-01",
+        "interlock_name": "Robotic Arm Unit 008 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T05:53:00+00:00",
+        "last_trip": "2026-10-01T08:56:24+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH008-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-011",
+        "machine_name": "Stamping Unit Unit 011",
+        "interlock_id": "ITL-MCH011-01",
+        "interlock_name": "Stamping Unit Unit 011 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:30:32+00:00",
+        "last_trip": "2026-10-01T04:53:51+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH011-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-012",
+        "machine_name": "Injection Molder Unit 012",
+        "interlock_id": "ITL-MCH012-01",
+        "interlock_name": "Injection Molder Unit 012 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:02:06+00:00",
+        "last_trip": "2026-10-01T04:29:06+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH012-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-013",
+        "machine_name": "Cnc Mill Unit 013",
+        "interlock_id": "ITL-MCH013-01",
+        "interlock_name": "Cnc Mill Unit 013 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:14:42+00:00",
+        "last_trip": "2026-10-01T07:50:31+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH013-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-017",
+        "machine_name": "Stamping Unit Unit 017",
+        "interlock_id": "ITL-MCH017-01",
+        "interlock_name": "Stamping Unit Unit 017 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:02:07+00:00",
+        "last_trip": "2026-10-01T09:12:54+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH017-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-019",
+        "machine_name": "Cnc Mill Unit 019",
+        "interlock_id": "ITL-MCH019-01",
+        "interlock_name": "Cnc Mill Unit 019 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:00:14+00:00",
+        "last_trip": "2026-10-01T14:10:44+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH019-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-020",
+        "machine_name": "Robotic Arm Unit 020",
+        "interlock_id": "ITL-MCH020-01",
+        "interlock_name": "Robotic Arm Unit 020 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T02:17:43+00:00",
+        "last_trip": "2026-10-01T07:52:03+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH020-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-021",
+        "machine_name": "Hydraulic Press Unit 021",
+        "interlock_id": "ITL-MCH021-01",
+        "interlock_name": "Hydraulic Press Unit 021 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:04:32+00:00",
+        "last_trip": "2026-10-01T07:57:38+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH021-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-022",
+        "machine_name": "Conveyor Unit 022",
+        "interlock_id": "ITL-MCH022-01",
+        "interlock_name": "Conveyor Unit 022 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:29:22+00:00",
+        "last_trip": "2026-10-01T04:43:42+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH022-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-023",
+        "machine_name": "Stamping Unit Unit 023",
+        "interlock_id": "ITL-MCH023-01",
+        "interlock_name": "Stamping Unit Unit 023 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:23:46+00:00",
+        "last_trip": "2026-10-01T11:12:48+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH023-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-026",
+        "machine_name": "Robotic Arm Unit 026",
+        "interlock_id": "ITL-MCH026-01",
+        "interlock_name": "Robotic Arm Unit 026 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:06:44+00:00",
+        "last_trip": "2026-10-01T05:49:54+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH026-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-036",
+        "machine_name": "Injection Molder Unit 036",
+        "interlock_id": "ITL-MCH036-01",
+        "interlock_name": "Injection Molder Unit 036 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:15:03+00:00",
+        "last_trip": "2026-10-01T11:17:27+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH036-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-037",
+        "machine_name": "Cnc Mill Unit 037",
+        "interlock_id": "ITL-MCH037-01",
+        "interlock_name": "Cnc Mill Unit 037 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:28:54+00:00",
+        "last_trip": "2026-10-01T04:58:54+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH037-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-040",
+        "machine_name": "Conveyor Unit 040",
+        "interlock_id": "ITL-MCH040-01",
+        "interlock_name": "Conveyor Unit 040 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:08:19+00:00",
+        "last_trip": "2026-10-01T04:26:29+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH040-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-047",
+        "machine_name": "Stamping Unit Unit 047",
+        "interlock_id": "ITL-MCH047-01",
+        "interlock_name": "Stamping Unit Unit 047 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:21:19+00:00",
+        "last_trip": "2026-10-01T11:15:47+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH047-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-049",
+        "machine_name": "Cnc Mill Unit 049",
+        "interlock_id": "ITL-MCH049-01",
+        "interlock_name": "Cnc Mill Unit 049 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T01:04:27+00:00",
+        "last_trip": "2026-10-01T03:51:52+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH049-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-060",
+        "machine_name": "Injection Molder Unit 060",
+        "interlock_id": "ITL-MCH060-01",
+        "interlock_name": "Injection Molder Unit 060 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 4,
+        "first_trip": "2026-10-01T00:48:45+00:00",
+        "last_trip": "2026-10-01T06:19:51+00:00",
+        "risk_rating": "CRITICAL",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH060-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-001",
+        "machine_name": "Cnc Mill Unit 001",
+        "interlock_id": "ITL-MCH001-01",
+        "interlock_name": "Cnc Mill Unit 001 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T01:52:55+00:00",
+        "last_trip": "2026-10-01T08:02:17+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH001-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-018",
+        "machine_name": "Injection Molder Unit 018",
+        "interlock_id": "ITL-MCH018-01",
+        "interlock_name": "Injection Molder Unit 018 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T00:36:05+00:00",
+        "last_trip": "2026-10-01T04:55:44+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH018-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-025",
+        "machine_name": "Cnc Mill Unit 025",
+        "interlock_id": "ITL-MCH025-01",
+        "interlock_name": "Cnc Mill Unit 025 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T03:36:27+00:00",
+        "last_trip": "2026-10-01T05:33:41+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH025-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-031",
+        "machine_name": "Cnc Mill Unit 031",
+        "interlock_id": "ITL-MCH031-01",
+        "interlock_name": "Cnc Mill Unit 031 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T00:48:16+00:00",
+        "last_trip": "2026-10-01T07:41:11+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH031-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-043",
+        "machine_name": "Cnc Mill Unit 043",
+        "interlock_id": "ITL-MCH043-01",
+        "interlock_name": "Cnc Mill Unit 043 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT03-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T01:19:54+00:00",
+        "last_trip": "2026-10-01T04:26:19+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH043-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-053",
+        "machine_name": "Stamping Unit Unit 053",
+        "interlock_id": "ITL-MCH053-01",
+        "interlock_name": "Stamping Unit Unit 053 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T00:46:21+00:00",
+        "last_trip": "2026-10-01T04:41:49+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH053-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-054",
+        "machine_name": "Injection Molder Unit 054",
+        "interlock_id": "ITL-MCH054-01",
+        "interlock_name": "Injection Molder Unit 054 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT02-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T03:10:17+00:00",
+        "last_trip": "2026-10-01T07:56:48+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH054-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-056",
+        "machine_name": "Robotic Arm Unit 056",
+        "interlock_id": "ITL-MCH056-01",
+        "interlock_name": "Robotic Arm Unit 056 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 3,
+        "first_trip": "2026-10-01T00:59:08+00:00",
+        "last_trip": "2026-10-01T03:09:50+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH056-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-005",
+        "machine_name": "Stamping Unit Unit 005",
+        "interlock_id": "ITL-MCH005-01",
+        "interlock_name": "Stamping Unit Unit 005 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT01-001",
+        "trip_count": 2,
+        "first_trip": "2026-10-01T00:00:53+00:00",
+        "last_trip": "2026-10-01T02:02:22+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH005-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      },
+      {
+        "pattern_type": "CHRONIC_INTERLOCK_TRIP",
+        "machine_id": "MCH-016",
+        "machine_name": "Conveyor Unit 016",
+        "interlock_id": "ITL-MCH016-01",
+        "interlock_name": "Conveyor Unit 016 Guard Door 01",
+        "interlock_type": "GUARD_DOOR",
+        "zone_id": "SAFE-PLT04-001",
+        "trip_count": 2,
+        "first_trip": "2026-10-01T00:47:32+00:00",
+        "last_trip": "2026-10-01T04:32:55+00:00",
+        "risk_rating": "HIGH",
+        "recommendation": "Perform mechanical alignment and electrical loop test on ITL-MCH016-01. Repeated tripping indicates physical guard misalignment or optical sensor drift."
+      }
+    ],
+    "zone_hazard_hotspots": [
+      {
+        "zone_id": "SAFE-PLT02-001",
+        "zone_name": "DET Zone 01 (Thermal Radiation)",
+        "plant_id": "PLT-02",
+        "hazard_classification": "THERMAL_RADIATION",
+        "total_incidents": 13,
+        "machines_involved": 7,
+        "total_lost_hours": 57.6
+      },
+      {
+        "zone_id": "SAFE-PLT03-001",
+        "zone_name": "STU Zone 01 (Mechanical Pinch)",
+        "plant_id": "PLT-03",
+        "hazard_classification": "MECHANICAL_PINCH",
+        "total_incidents": 11,
+        "machines_involved": 8,
+        "total_lost_hours": 50.7
+      },
+      {
+        "zone_id": "SAFE-PLT01-001",
+        "zone_name": "ATX Zone 01 (Thermal Radiation)",
+        "plant_id": "PLT-01",
+        "hazard_classification": "THERMAL_RADIATION",
+        "total_incidents": 9,
+        "machines_involved": 5,
+        "total_lost_hours": 28.9
+      },
+      {
+        "zone_id": "SAFE-PLT04-001",
+        "zone_name": "YOK Zone 01 (Thermal Radiation)",
+        "plant_id": "PLT-04",
+        "hazard_classification": "THERMAL_RADIATION",
+        "total_incidents": 7,
+        "machines_involved": 5,
+        "total_lost_hours": 46.4
+      }
+    ]
+  },
+  "isa18_alarms": {
+    "total_alarms": 50250,
+    "nuisance_alarm_count": 2638,
+    "nuisance_alarm_ratio": 0.0525,
+    "alarm_floods": {
+      "total_flood_alarm_events": 318,
+      "isa_flood_standard": "> 10 alarms per 10-minute interval",
+      "top_flood_machines": [
+        {
+          "machine_id": "MCH-004",
+          "flood_alarms": 102
+        },
+        {
+          "machine_id": "MCH-018",
+          "flood_alarms": 54
+        },
+        {
+          "machine_id": "MCH-023",
+          "flood_alarms": 39
+        },
+        {
+          "machine_id": "MCH-028",
+          "flood_alarms": 28
+        },
+        {
+          "machine_id": "MCH-036",
+          "flood_alarms": 24
+        }
+      ]
+    },
+    "chattering_alarms": {
+      "total_chattering_events": 116,
+      "isa_chattering_criteria": ">= 3 transitions per minute for identical alarm tag",
+      "top_chattering_tags": [
+        {
+          "machine_id": "MCH-007",
+          "code": "ALM_THERMAL_OVERLIMIT_186",
+          "name": "Motor Stator Temperature High (Variant 186)",
+          "count": 6
+        },
+        {
+          "machine_id": "MCH-010",
+          "code": "ALM_PNEUMATIC_PRESSURE_DROP_026",
+          "name": "Main Air Header Pressure Bleed (Variant 026)",
+          "count": 6
+        },
+        {
+          "machine_id": "MCH-029",
+          "code": "ALM_THERMAL_OVERLIMIT",
+          "name": "Motor Stator Temperature High",
+          "count": 6
+        },
+        {
+          "machine_id": "MCH-055",
+          "code": "ALM_HYDRAULIC_PRESSURE_LOW_097",
+          "name": "Hydraulic Manifold Pressure Drop (Variant 097)",
+          "count": 6
+        },
+        {
+          "machine_id": "MCH-005",
+          "code": "ALM_PNEUMATIC_PRESSURE_DROP_161",
+          "name": "Main Air Header Pressure Bleed (Variant 161)",
+          "count": 5
+        }
+      ]
+    },
+    "fleeting_alarms": {
+      "total_fleeting_events": 2522,
+      "isa_fleeting_criteria": "Alarm duration < 5 seconds auto-cleared without operator intervention",
+      "top_fleeting_tags": [
+        {
+          "machine_id": "MCH-026",
+          "code": "ALM_THERMAL_OVERLIMIT_171",
+          "avg_duration_sec": 2.16,
+          "count": 4
+        },
+        {
+          "machine_id": "MCH-040",
+          "code": "ALM_VIBRATION_EXCESS",
+          "avg_duration_sec": 2.69,
+          "count": 4
+        },
+        {
+          "machine_id": "MCH-054",
+          "code": "ALM_COOLANT_FLOW_INTERRUPT_164",
+          "avg_duration_sec": 2.1,
+          "count": 4
+        },
+        {
+          "machine_id": "MCH-001",
+          "code": "ALM_CONVEYOR_JAM_DETECTED_057",
+          "avg_duration_sec": 2.84,
+          "count": 3
+        },
+        {
+          "machine_id": "MCH-002",
+          "code": "ALM_VIBRATION_EXCESS_143",
+          "avg_duration_sec": 2.9,
+          "count": 3
+        }
+      ]
+    },
+    "severity_distribution": {
+      "CRITICAL": 19163,
+      "HIGH": 10866,
+      "LOW": 9964,
+      "MEDIUM": 10257
+    },
+    "category_distribution": {
+      "ELECTRICAL": 9647,
+      "MECHANICAL": 10254,
+      "PROCESS": 10434,
+      "SAFETY": 19915
+    },
+    "top_bad_actor_machines": [
+      {
+        "machine_id": "MCH-004",
+        "machine_name": "Conveyor Unit 004",
+        "machine_type": "CONVEYOR",
+        "total_alarms": 949,
+        "critical_alarms": 326
+      },
+      {
+        "machine_id": "MCH-018",
+        "machine_name": "Injection Molder Unit 018",
+        "machine_type": "INJECTION_MOLDER",
+        "total_alarms": 909,
+        "critical_alarms": 342
+      },
+      {
+        "machine_id": "MCH-028",
+        "machine_name": "Conveyor Unit 028",
+        "machine_type": "CONVEYOR",
+        "total_alarms": 908,
+        "critical_alarms": 331
+      },
+      {
+        "machine_id": "MCH-010",
+        "machine_name": "Conveyor Unit 010",
+        "machine_type": "CONVEYOR",
+        "total_alarms": 901,
+        "critical_alarms": 344
+      },
+      {
+        "machine_id": "MCH-023",
+        "machine_name": "Stamping Unit Unit 023",
+        "machine_type": "STAMPING_UNIT",
+        "total_alarms": 899,
+        "critical_alarms": 333
+      }
+    ]
+  },
+  "acknowledgement_sla": {
+    "overall_metrics": {
+      "total_alarms": 50250,
+      "total_acknowledged": 43115,
+      "acknowledgement_rate_percent": 85.8,
+      "average_latency_seconds": 724.86,
+      "total_sla_breaches": 6388,
+      "sla_compliance_rate_percent": 85.18
+    },
+    "performance_by_severity": [
+      {
+        "severity": "CRITICAL",
+        "target_sla_seconds": 120,
+        "total_acknowledgements": 16733,
+        "average_latency_seconds": 87.2,
+        "sla_breaches": 2459,
+        "compliance_rate_percent": 85.3
+      },
+      {
+        "severity": "HIGH",
+        "target_sla_seconds": 300,
+        "total_acknowledgements": 9250,
+        "average_latency_seconds": 217.7,
+        "sla_breaches": 1375,
+        "compliance_rate_percent": 85.14
+      },
+      {
+        "severity": "MEDIUM",
+        "target_sla_seconds": 900,
+        "total_acknowledgements": 8672,
+        "average_latency_seconds": 654.7,
+        "sla_breaches": 1291,
+        "compliance_rate_percent": 85.11
+      },
+      {
+        "severity": "LOW",
+        "target_sla_seconds": 3600,
+        "total_acknowledgements": 8460,
+        "average_latency_seconds": 2612.6,
+        "sla_breaches": 1256,
+        "compliance_rate_percent": 85.15
+      }
+    ],
+    "performance_by_shift_type": [
+      {
+        "shift_type": "NIGHT",
+        "total_acknowledgements": 13974,
+        "average_latency_seconds": 728.9,
+        "sla_breaches": 2071,
+        "compliance_percent": 85.18
+      },
+      {
+        "shift_type": "MORNING",
+        "total_acknowledgements": 14826,
+        "average_latency_seconds": 723.9,
+        "sla_breaches": 2159,
+        "compliance_percent": 85.44
+      },
+      {
+        "shift_type": "AFTERNOON",
+        "total_acknowledgements": 14315,
+        "average_latency_seconds": 721.9,
+        "sla_breaches": 2151,
+        "compliance_percent": 84.97
+      }
+    ],
+    "flood_correlation": {
+      "avg_latency_during_alarm_flood_seconds": 910.4,
+      "avg_latency_during_normal_operations_seconds": 724.6,
+      "operator_overload_delay_multiplier": 1.26
+    }
+  },
+  "corrective_actions": {
+    "status_breakdown": {
+      "CLOSED": 35
+    },
+    "verification_compliance": {
+      "total_closed_actions": 35,
+      "verified_closed_actions": 5,
+      "unverified_closed_actions": 30,
+      "verification_compliance_percent": 14.29,
+      "compliance_risk_level": "CRITICAL"
+    },
+    "action_type_distribution": [
+      {
+        "action_type": "SENSOR_CALIBRATION",
+        "count": 11,
+        "avg_effectiveness_score": 0.9
+      },
+      {
+        "action_type": "OPERATOR_RETRAINING",
+        "count": 10,
+        "avg_effectiveness_score": 0.63
+      },
+      {
+        "action_type": "HARDWARE_REPLACEMENT",
+        "count": 7,
+        "avg_effectiveness_score": 0.9
+      },
+      {
+        "action_type": "SOFTWARE_INTERLOCK_UPDATE",
+        "count": 4,
+        "avg_effectiveness_score": 0.95
+      },
+      {
+        "action_type": "SAFETY_GUARD_REDESIGN",
+        "count": 3,
+        "avg_effectiveness_score": 0.95
+      }
+    ],
+    "effectiveness_metrics": {
+      "average_effectiveness_score": 0.83,
+      "min_effectiveness_score": 0.35,
+      "max_effectiveness_score": 0.98
+    }
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "pattern_id": "GT-REC-0001",
+    "machine_id": "MCH-001",
+    "zone_id": "SAFE-PLT01-001",
+    "hazard_type": "THERMAL_RUNAWAY_BREACH",
+    "first_incident_id": "INC-2026-000011",
+    "recurrent_incident_id": "INC-2026-000012",
+    "intervening_action_id": "ACT-INC-2026-000011-01",
+    "days_to_recurrence": 10.0,
+    "root_cause_finding": "Corrective action ACT-INC-2026-000011-01 failed to prevent recurrence of THERMAL_RUNAWAY_BREACH. Hardware drift in zone SAFE-PLT01-001 remained unmitigated."
+  },
+  {
+    "pattern_id": "GT-REC-0002",
+    "machine_id": "MCH-002",
+    "zone_id": "SAFE-PLT02-001",
+    "hazard_type": "THERMAL_RUNAWAY_BREACH",
+    "first_incident_id": "INC-2026-000013",
+    "recurrent_incident_id": "INC-2026-000014",
+    "intervening_action_id": "ACT-INC-2026-000013-01",
+    "days_to_recurrence": 7.0,
+    "root_cause_finding": "Corrective action ACT-INC-2026-000013-01 failed to prevent recurrence of THERMAL_RUNAWAY_BREACH. Hardware drift in zone SAFE-PLT02-001 remained unmitigated."
+  }
+]

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safety-intelligence-platform"
+version = "1.0.0"
+description = "Industrial safety telemetry analyzer for repeated unsafe conditions, ISA-18.2 compliance, and root cause traceability."
+authors = [{ name = "Safety Intelligence Team" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0"
+]
+
+[project.scripts]
+safety-intel = "safety_intelligence.cli:main"
